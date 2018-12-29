@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    <!--</style>-->
+    <!--&lt;!&ndash;<style name="toolbar_theme" parent="Theme.AppCompat.Light">&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorControlNormal">@color/colorAccent</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;<span style="white-space:pre">	</span><item name="android:actionBarSize">46dp</item>&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:homeAsUpIndicator">@drawable/icon</item>&ndash;&gt;-->
+</style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--</style>-->
+        <!--&lt;!&ndash;<style name="toolbar_theme" parent="Theme.AppCompat.Light">&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="colorControlNormal">@color/colorAccent</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<span style="white-space:pre">	</span><item name="android:actionBarSize">46dp</item>&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:homeAsUpIndicator">@drawable/icon</item>&ndash;&gt;-->
+    </style>
+
+</resources>

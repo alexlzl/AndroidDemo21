@@ -1,0 +1,18 @@
+<resources>
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="android:windowNoTitle">true</item>
+    <!--Toolbar颜色-->
+    <item name="colorPrimary">@android:color/holo_blue_bright</item>
+    <!-- 状态栏颜色 -->
+    <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+</style>
+    <!--<style name="toolbar_theme" parent="Theme.AppCompat.Light">-->
+        <!--<item name="colorControlNormal">@color/colorAccent</item>-->
+        <!--&lt;!&ndash;<span style="white-space:pre">	</span><item name="android:actionBarSize">46dp</item>&ndash;&gt;-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/icon</item>-->
+    <!--</style>-->
+</resources>
+
