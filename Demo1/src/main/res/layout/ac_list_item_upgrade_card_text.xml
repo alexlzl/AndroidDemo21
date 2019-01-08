@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_ac_upgrade_msg"
+    android:gravity="left"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:textSize="14dp"
+    android:textColor="@color/ac_5A6066"
+    android:text="@string/ac_inquire_upgrade_card_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+</TextView>

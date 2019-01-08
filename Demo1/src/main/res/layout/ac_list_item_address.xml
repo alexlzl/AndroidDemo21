@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    >
+
+    <CheckBox
+        android:background="@drawable/ac_checbox_bg_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/cb_ac_check_address"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        />
+    <RelativeLayout
+        android:layout_marginRight="12dp"
+        android:id="@+id/rl_ac_address_item"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/cb_ac_check_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_ac_address_name"
+            android:text="心爱的小伙心爱的小伙心爱的小伙心爱的小伙心爱的小伙心爱的小伙心爱的小伙心爱的小伙"
+            android:textSize="15dp"
+            android:textColor="@color/ac_262C32"
+            android:maxWidth="@dimen/ac_inquire_address_name_max_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/tv_ac_address_name"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/tv_ac_address_phone"
+            android:text="15510030055"
+            android:textSize="15dp"
+            android:textColor="@color/ac_00050A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_ac_address_name"
+            android:id="@+id/tv_ac_address"
+            android:text="北京通州潞苑南大街100号院北京通州潞苑南大街100号院北京通州潞苑南大街100号院北京通州潞苑南大街100号院北京通州潞苑南大街100号院北京通州潞苑南大街100号院"
+            android:textSize="14dp"
+            android:textColor="@color/ac_00002A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_ac_address_notify"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_ac_address"
+            android:textSize="12dp"
+            android:textColor="@color/ac_FF8800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ac_inquire_address_notify"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_alignLeft="@+id/rl_ac_address_item"
+        android:id="@+id/view_line_search"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_ac_address_item"
+        android:layout_marginTop="10dp"
+        android:background="@color/ac_EBECED" />
+
+</RelativeLayout>

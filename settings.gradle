@@ -1,1 +1,1 @@
-include ':Notification', ':Activity', ':Notification2', 'Notification1', 'Shortcut'
+include ':Notification', ':Activity', ':Notification2', ':ActivityLib', ':Demo1', ':Drawable', 'Notification1', 'Shortcut'

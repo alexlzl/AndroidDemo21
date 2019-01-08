@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ac_inquire_notify">加价换购会员信息不可更改</string>
+    <string name="ac_inquire_title">选择会员卡信息</string>
+    <string name="ac_inquire_create_card">开卡</string>
+    <string name="ac_inquire_member">会&#160;&#160;&#160;&#160;员</string>
+    <string name="ac_inquire_temporary_card">临时卡</string>
+    <string name="ac_inquire_phone_num">请输入手机号/会员卡</string>
+    <string name="ac_inquire_confirm">确认</string>
+    <string name="ac_inquire_upgrade">升级</string>
+    <string name="ac_inquire_delivery_address">配送地址</string>
+    <string name="ac_inquire_add_delivery_address">新增配送地址</string>
+    <string name="ac_inquire_upgrade_card_message">提醒顾客：\n会员卡升级后在国美所有门店及国美app通用！\n仅能绑定一张门店会员卡，且无法解绑或修改，若您的预留手机下有多张卡，绑定后其他卡无法享受本次服务升级，但仍然可以在任意门店使用\n客服电话：400-811-3333
+</string>
+    <string name="ac_inquire_create_card_msg">您还不是国美会员，赶快
+去开卡吧!</string>
+    <string name="ac_inquire_create_card_now">立即开卡</string>
+    <string name="ac_inquire_phone">手机号</string>
+    <string name="ac_inquire_verification_code">验证码</string>
+    <string name="ac_inquire_input_pic_code_msg">请输入图文验证码</string>
+    <string name="ac_inquire_input_msg_code">请输入短信验证码</string>
+    <string name="ac_inquire_guomei_card">国美会员卡</string>
+    <string name="ac_inquire_yongle_card">永乐会员卡</string>
+    <string name="ac_inquire_dazhong_card">大中会员卡</string>
+    <string name="ac_inquire_card_status_not_bind_normal">未升级</string>
+    <string name="ac_inquire_card_status_not_bind_not_normal">已冻结</string>
+    <string name="ac_inquire_card_status_bind">已绑定</string>
+    <string name="ac_inquire_select_bind_card_msg">请选择要升级的卡</string>
+    <string name="ac_inquire_can_not_create_card">无法创建会员卡！</string>
+    <string name="ac_inquire_address_can_not_add">已达上限，请联系服务台解决或者让顾客在国美线上平台修改！</string>
+    <string name="ac_inquire_get_msg_code_success">获取短信验证码成功</string>
+    <string name="ac_inquire_get_pic_code_success">获取图片验证码成功</string>
+    <string name="ac_inquire_get_pic_code_fail">获取图片验证码失败</string>
+    <string name="ac_inquire_request_error">服务异常</string>
+    <string name="ac_inquire_phone_msg">请输入手机号码或会员卡号</string>
+    <string name="ac_inquire_phone_format">手机号：%1$s</string>
+    <string name="ac_inquire_time_format">创建时间：%1$s</string>
+    <string name="ac_inquire_default_address">[  默认 ] %1$s</string>
+    <string name="ac_inquire_timer_msg">%1$ss重发</string>
+    <string name="ac_inquire_card_update_success_msg">该顾客会员卡升级成功！</string>
+    <string name="ac_inquire_address_not_complete">该地址不可用，请新增地址或到服务台完善!</string>
+    <string name="ac_inquire_card_freeze">会员卡已冻结，需要服务台解冻！</string>
+    <string name="ac_inquire_card_search">查询</string>
+    <string name="ac_inquire_no_address">暂无收货地址哦~</string>
+    <string name="ac_inquire_freeze_toast">该会员卡已冻结，需要到服务台解冻！</string>
+    <string name="ac_inquire_address_notify">该地址不可用，请新增地址或到服务台完善</string>
+    <string name="ac_inquire_no_card_info">查询会员卡信息异常</string>
+    <string name="ac_temporary_card">临&#32; 时&#32; 卡</string>
+   <!--返回异常提示-->
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_ac_inquire_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_title_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_ac_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ac_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/ac_inquire_title"
+            android:textColor="@color/ac_333333"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_ac_create_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/ac_inquire_create_card"
+            android:textColor="@color/ac_01C990"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_title_parent"
+        android:background="@color/ac_EBECED" />
+    <!--加价换购提示-->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:paddingLeft="20dp"
+        android:text="@string/ac_inquire_notify"
+        android:id="@+id/tv_ac_notify"
+        android:layout_below="@+id/view_line"
+        android:textColor="@color/ac_FFB663"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--会员查询-->
+    <LinearLayout
+        android:id="@+id/rl_ac_search_parent"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_ac_notify"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.3"
+            android:background="@drawable/ac_search_bg_gray">
+
+            <ImageView
+                android:id="@+id/ac_search_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:src="@drawable/ac_icon_search" />
+
+            <EditText
+                android:id="@+id/et_inquire_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/ac_search_icon"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="@string/ac_inquire_phone_num"
+                android:inputType="number"
+                android:maxLines="2"
+                android:textColor="@color/ac_00050A"
+                android:textColorHint="@color/ac_BFBFBF"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/ac_inquire_clear"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ac_inquire_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/iv_inquire_search"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/ac_search_bg_green"
+            android:text="@string/ac_inquire_card_search"
+            android:textColor="@color/ac_FFFFFF"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <!--临时卡控件-->
+    <RelativeLayout
+        android:id="@+id/rl_ac_temporary_card_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_ac_search_parent"
+        android:layout_marginTop="21dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_inquire_temporary_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/ac_inquire_temporary_card"
+            android:textColor="@color/ac_00050A"
+            android:textSize="15dp" />
+
+
+        <CheckBox
+            android:id="@+id/cb_ac_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ac_checkbox_bg_search"
+            android:button="@null" />
+    </RelativeLayout>
+    <!--fragment容器-->
+    <FrameLayout
+        android:id="@+id/fl_ac_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_ac_temporary_card_parent" />
+    <!--确认按钮-->
+    <Button
+        android:id="@+id/btn_ac_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ac_btn_bg_selector"
+        android:gravity="center"
+        android:text="@string/ac_inquire_confirm"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:visibility="visible" />
+</RelativeLayout>

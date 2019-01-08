@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ac_inquire_verification_size">12dp</dimen>
+    <dimen name="ac_inquire_et_width">110dp</dimen>
+    <dimen name="ac_inquire_address_name_max_width">190dp</dimen>
+    <dimen name="ac_inquire_card_max_width">160dp</dimen>
+</resources>

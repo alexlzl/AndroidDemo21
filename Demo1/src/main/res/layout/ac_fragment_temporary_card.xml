@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+   >
+    <!--空地址视图-->
+    <LinearLayout
+        android:id="@+id/ac_inquire_no_address_parent"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ac_no_address"/>
+        <TextView
+            android:textColor="@color/ac_5A6066"
+            android:textSize="16dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/ac_inquire_no_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/ac_inquire_no_address"
+            android:text="@string/ac_inquire_add_delivery_address"
+            android:textColor="@color/ac_FFFFFF"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ac_btn_bg_selector"
+            android:layout_width="120dp"
+            android:layout_height="37dp" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/ac_00050A"
+        android:textSize="15sp"
+        android:id="@+id/tv_ac_temporary_card"
+        android:text="@string/ac_temporary_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--临时卡视图-->
+    <RelativeLayout
+        android:layout_below="@+id/tv_ac_temporary_card"
+        android:visibility="gone"
+        android:id="@+id/rl_ac_temporary_member_card_parent"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ac_bg_member_card_normal">
+        <!--会员卡信息视图区-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="12dp">
+            <!--图标区-->
+            <ImageView
+                android:id="@+id/iv_ac_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ac_icon_guomei" />
+
+            <LinearLayout
+                android:id="@+id/ac_card_middle_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="60dp"
+                android:layout_toRightOf="@+id/iv_ac_icon"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ac_member_card_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="100  333   555   666"
+                        android:textColor="@color/ac_00050A"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_ac_card_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_ac_member_card_num"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_ac_member_card_num"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="已经冻结"
+                        android:textColor="@color/ac_5A6066"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_ac_member_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="7dp"
+                        android:text="临时卡"
+                        android:textColor="@color/ac_00050A"
+                        android:textSize="14dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_ac_card_create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@+id/tv_ac_member_name"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="创建时间:2018.3.26"
+                        android:textColor="@color/ac_00050A"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_ac_meidou_parent"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ac_member_meidou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="-美豆-"
+                    android:textColor="@color/ac_00050A"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_ac_member_meidou_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:maxWidth="60dp"
+                    android:text="6000"
+                    android:textColor="@color/ac_00050A"
+                    android:textSize="27dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_ac_member_card_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ac_icon_member_card_select"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <!--新增地址-->
+    <RelativeLayout
+        android:id="@+id/rl_ac_add_address_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_ac_temporary_member_card_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ac_bg_address_title"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_ac_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/ac_inquire_delivery_address"
+            android:textColor="@color/ac_00050A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_ac_add_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_ac_add_icon"
+            android:text="@string/ac_inquire_add_delivery_address"
+            android:textColor="@color/ac_00050A"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_ac_add_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ac_iv_add_address" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/ac_bg_address_list"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:overScrollMode="never"
+        android:layout_below="@+id/rl_ac_add_address_parent"
+        android:id="@+id/rv_ac_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:visibility="gone"
+        style="@style/The.Button.09"
+        android:id="@+id/btn_ac_confirm"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:text="@string/ac_inquire_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:overScrollMode="never"
+        android:id="@+id/rv_ac_card_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:visibility="gone"
+        android:gravity="left"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14dp"
+        android:textColor="@color/ac_5A6066"
+        android:text="@string/ac_inquire_upgrade_card_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/The.Button.09"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_ac_confirm"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:text="@string/ac_inquire_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

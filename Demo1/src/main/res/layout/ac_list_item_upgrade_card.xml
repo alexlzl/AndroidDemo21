@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_ac_member_card_parent"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/ac_bg_member_card_normal"
+    android:paddingLeft="11dp">
+    <!--会员卡模板-->
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ac_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/ac_icon_guomei" />
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/iv_ac_icon">
+
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/ll_ac_meidou_parent"
+                android:layout_marginRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:maxWidth="@dimen/ac_inquire_card_max_width"
+                        android:id="@+id/tv_ac_member_card_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="100  333   555   666"
+                        android:textColor="@color/ac_00050A"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:layout_marginLeft="7dp"
+                        android:text="未升级"
+                        android:id="@+id/tv_ac_member_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ac_5A6066"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="11dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_marginRight="7dp"
+                        android:visibility="gone"
+                        android:id="@+id/tv_ac_member_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="刘德华"
+                        android:textColor="@color/ac_00050A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                         android:singleLine="true"
+                        android:ellipsize="end"
+                        android:id="@+id/tv_ac_create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创建时间:2018.3.26"
+                        android:textColor="@color/ac_00050A"
+                        android:textSize="13dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginRight="11dp"
+                android:id="@+id/ll_ac_meidou_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/tv_ac_member_meidou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="-美豆-"
+                    android:textColor="@color/ac_00050A"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxWidth="60dp"
+                    android:layout_marginTop="2dp"
+                    android:text="10000"
+                    android:id="@+id/tv_ac_member_meidou_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/ac_00050A"
+                    android:textSize="27dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_ac_check_status"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ac_icon_member_card_select" />
+
+
+
+
+
+</RelativeLayout>

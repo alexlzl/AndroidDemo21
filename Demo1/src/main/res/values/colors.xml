@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ac_333333">#333333</color>
+    <color name="ac_01C990">#01C990</color>
+    <color name="ac_EBECED">#EBECED</color>
+    <color name="ac_00050A">#00050A</color>
+    <color name="ac_BFBFBF">#BFBFBF</color>
+    <color name="ac_00D1B9">#00D1B9</color>
+    <color name="ac_D7D8D9">#D7D8D9</color>
+    <color name="ac_FFFFFF">#FFFFFF</color>
+    <color name="ac_80FFFFFF">#80FFFFFF</color>
+    <color name="ac_9393AA">#9393AA</color>
+    <color name="ac_5A6066">#5A6066</color>
+    <color name="ac_f2f2f2">#f2f2f2</color>
+    <color name="ac_262C32">#262C32</color>
+    <color name="ac_000000">#000000</color>
+    <color name="ac_FFB663">#FFB663</color>
+    <color name="ac_E4E4E4">#E4E4E4</color>
+    <color name="ac_999999">#999999</color>
+    <color name="ac_CACCCF">#CACCCF</color>
+    <color name="ac_FF4800">#FF4800</color>
+    <color name="ac_FFDAD3">#FFDAD3</color>
+    <color name="ac_DDDAD7">#DDDAD7</color>
+    <color name="ac_4ED9B2">#4ED9B2</color>
+    <color name="ac_4BDECC">#4BDECC</color>
+    <color name="ac_F3F5F7">#F3F5F7</color>
+    <color name="ac_DCDDDE">#DCDDDE</color>
+    <color name="ac_00002A">#00002A</color>
+    <color name="ac_FF8800">#FF8800</color>
+    <color name="ac_7A7F85">#7A7F85</color>
+    <color name="ac_B3B8BD">#B3B8BD</color>
+
+
+</resources>
