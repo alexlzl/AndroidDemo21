@@ -1,1 +1,1 @@
-include ':Notification', ':Activity', ':Notification2', ':ActivityLib', ':Demo1', ':Drawable', ':LayoutInflater', ':TestCpu', ':TestProfiler', ':IPC', 'Notification1', 'Shortcut'
+include ':Notification', ':Activity', ':Notification2', ':ActivityLib', ':Demo1', ':Drawable', ':LayoutInflater', ':TestCpu', ':TestProfiler', ':IPC', ':ShiPei', 'Notification1', 'Shortcut', ':annotation', ':processor', ':app'

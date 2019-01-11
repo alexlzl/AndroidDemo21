@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
-    <item name="layout" type="layout">@layout/activity_main</item>
+    <string name="test">default</string>
 </resources>
